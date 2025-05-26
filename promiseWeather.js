@@ -19,4 +19,5 @@ function getWeather(city) {
 
 getWeather(`London`)
 .then((result) => console.log(result))
-.catch((err) => console.log(`Error:`,err));
+.catch((err) => console.log(`Error:`,err))
+.finally(() => console.log(`Request completed.`));
